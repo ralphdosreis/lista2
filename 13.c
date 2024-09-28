@@ -2,25 +2,40 @@
 
 int main()
 {
-  int n, p, i;
-  float mp, mi;
+  int n, p = 0, i = 0;
+  float mp = 0.0, mi = 0.0;
+  scanf("%d", &n);
   while (n != 0)
   {
-    scanf("%d", &n);
-    if ((n % 2 == 0) && (n != 0))
+    if (n % 2 == 0)
     {
       mp += n;
       p++;
     }
-    else if ((n % 2 != 0) && (n != 0))
+    else
     {
       mi += n;
       i++;
     }
+    scanf("%d", &n);
   }
-  mp /= p;
-  mi /= i;
-  printf("MEDIA PAR: %f\n", mp);
-  printf("MEDIA IMPAR: %f", mi);
+  if (p > 0)
+  {
+    mp /= p;
+    printf("MEDIA PAR: %f\n", mp);
+  }
+  else
+  {
+    printf("MEDIA PAR: 0.000000\n");
+  }
+  if (i > 0)
+  {
+    mi /= i;
+    printf("MEDIA IMPAR: %f\n", mi);
+  }
+  else
+  {
+    printf("MEDIA IMPAR: 0.000000\n");
+  }
   return 0;
 }

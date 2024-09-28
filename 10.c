@@ -22,13 +22,13 @@ int main()
       }
     }
     if (combinacoes > 0)
-    {
-      printf("Ha %d possibilidades", combinacoes);
-    }
-    else
-    {
-      printf("Combinacao impossivel");
-    }
+  {
+    printf("Ha %d possibilidades", combinacoes);
+  }
+  else
+  {
+    printf("Combinacao impossivel");
+  }
   }
   return 0;
 }
